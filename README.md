@@ -7,11 +7,11 @@ Include the script and initialize:
     <script src="hros.inViewport.js"></script>
     <script>inViewport.init({ itemsSelector: "div", inside: "inside" })</script>
     
-Initialization options:
+Initialization options with defaults:
 
     <script>
       inViewport.init({
-        container: document,          // Element on which to listen for events OR a selector string (optional)
+        container: document,          // Element on which to listen for events OR a selector string
 
         itemsSelector: "div",         // Selector for items inside the container (selects elements inside container)
 
@@ -19,8 +19,8 @@ Initialization options:
         verticalInside: "",           // when the item is completely inside the viewport (*inside)
         inside: "inside",             // or the item is visible in the viewport (*visible)
         horizontalVisible: "",        // If a classname is left blank it won't be used. You will most likely
-        verticalVisible: "",          // need either `visible` or `inside`
-        visible: "visible",
+        verticalVisible: "",          // need either `visible` or `inside`. You should define at least one 
+        visible: "",                  // class name.
 
         removeClasses: true           // Remove classes once the item leaves the viewport (default: true)
 
@@ -28,3 +28,4 @@ Initialization options:
                                       // runImmediately to true you can run the script whenever you want
       });
     </script>
+
