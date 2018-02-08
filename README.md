@@ -2,12 +2,9 @@
 
 # Usage
 
-Include the script:
+Include the script and initialize:
 
     <script src="hros.inViewport.js"></script>
-
-Initialize:
-
     <script>inViewport.init({ itemsSelector: "div", inside: "inside" })</script>
     
 Initialization options:
