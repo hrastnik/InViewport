@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="hros.inViewport.js"></script>
+  <script>
+    inViewport.init({
+      container: document,
+      itemsSelector: 'div',
+      // runImmediately: false,
+      // container: document,
+
+      // // These are all possible classNames that get added
+      // horizontalInside: "horizontalInside",
+      // verticalInside: "verticalInside",
+      inside: "inside",
+
+      // horizontalVisible: "horizontalVisible",
+      // verticalVisible: "verticalVisible",
+      visible: "visible",
+      //removeClasses: false,
+    })
+  </script>
+  <style>
+    div {
+      transition: 1s all;
+      height: 30vh;
+      margin: 5px;
+      border: 2px solid black;
+    }
+
+    .visible {
+      background-color: darkturquoise;
+    }
+
+    .inside {
+      background-color: crimson;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</body>
+
+</html>
