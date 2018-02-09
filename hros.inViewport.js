@@ -75,12 +75,25 @@ var inViewport = (function() {
         //   rectVisible: ${rectVisible}
         //   `
         // );
+        function addClasses(classes) {
+          var list = classes.split(" ");
+          for (var i = 0; i < list.length; i++) {
+            item.classList.add(list[i]);
+          }
+        }
+
+        function removeClasses(classes) {
+          var list = classes.split(" ");
+          for (var i = 0; i < list.length; i++) {
+            item.classList.remove(list[i]);
+          }
+        }
 
         function addOrRemove(shouldAdd, classname) {
           if (shouldAdd) {
-            item.classList.add(classname);
+            addClasses(classname);
           } else if (options.removeClasses) {
-            item.classList.remove(classname);
+            removeClasses(classname);
           }
         }
 

@@ -6,13 +6,14 @@
   <script src="./hros.inViewport.min.js"></script>
   <script>
     inViewport.init({
-      container: document,
+      container: '#test',
       itemsSelector: 'div',
-      inside: "inside",
+      inside: "inside testis",
       visible: "visible",
     })
   </script>
   <style>
+	#test {height: 50vw; width: 50vw; overflow: scroll}
     div {
       transition: 1s all;
       height: 30vh;
@@ -32,18 +33,20 @@
 
 <body>
 
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div id="test">
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+  </div>
 
 </body>
 
