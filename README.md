@@ -7,6 +7,8 @@ Include the script and initialize:
     <script src="hros.inViewport.js"></script>
     <script>inViewport.init({ itemsSelector: "div", inside: "inside" })</script>
 
+Class `inside` is added to all div elements when they are completely inside the viewport and removed when the div leaves the viewport.
+	
 Initialization options with defaults:
 
     <script>
